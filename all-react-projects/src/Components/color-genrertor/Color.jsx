@@ -64,4 +64,3 @@ function Color() {
 
 export default Color;
 
-/* Add the following CSS styles */

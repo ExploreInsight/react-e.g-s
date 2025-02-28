@@ -7,6 +7,12 @@
   background: linear-gradient(135deg, #b2f3e8, #0ea59e);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Slider Styling */
 .img-slider {
   position: relative;
@@ -32,33 +38,14 @@
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #ddd;
   border-radius: 50%;
-  /* padding: 5px; */
   transition: background 0.3s ease;
 }
 
-.left-arrow {
-  left: 15px;
-}
+.left-arrow { left: 15px; }
+.right-arrow { right: 15px; }
 
-.right-arrow {
-  right: 15px;
-}
-
-.arrow:hover {
-  background: #f0f0f0;
-  
-}
-
-.arrow:active {
-  background: #6bd2db;
-}
-
-/* Current Image Styling */
-.current-slider {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.arrow:hover { background: #f0f0f0; }
+.arrow:active { background: #6bd2db; }
 
 /* Circle Button Container */
 .circle-btn {
@@ -67,13 +54,14 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 15px;
 }
 
 /* Circle Buttons */
 .circle-btns {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
+  padding: 7px;
   background: #ddd;
   border: none;
   border-radius: 50%;
@@ -81,12 +69,5 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.circle-btns:hover {
-  background: #bbb;
-  transform: scale(1.1);
-}
-
-.circle-btns.active {
-  background: #333;
-  transform: scale(1.2);
-}
+.circle-btns:hover { background: #bbb; transform: scale(1.1); }
+.circle-btns.active { background: #333; transform: scale(1.2); }

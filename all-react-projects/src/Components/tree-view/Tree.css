@@ -1,0 +1,54 @@
+
+.tree-container{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    /* margin: 20px auto; */
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* style for the list items  */
+.tree-item{
+    list-style-type: none;
+    padding: 8px;
+    display: block;
+    border-bottom: 1px solid #444;;
+
+}
+
+/* indenation for child elements */
+.tree-children{
+    padding-left: 20px;
+    border-left: 2px solid #555;
+    margin-left: 10px;
+}
+
+/* expnad/collapse button styles */
+.toggle-btn{
+    cursor: pointer;
+    color: #0af;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: color .2 ease-in-out;
+}
+
+.toggle-btn:hover{
+    color: #0df;
+}
+
+.ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding: 8px 0;
+}
+
+/* smooth expand/collapse effect */
+.tree-children{
+    transition: all 0.3 ease-in-out;
+}

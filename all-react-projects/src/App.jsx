@@ -7,6 +7,7 @@ import ImgSlider from "./Components/image-slider/ImgSlider";
 import Index from "./Components/load-more/Index";
 import Tree from "./Components/tree-view/Tree";
 import { menusData } from "./Components/tree-view/data";
+import Qr from "./Components/QR_Genrator/Qr";
 export default function App() {
   return (
     <div>
@@ -27,6 +28,9 @@ export default function App() {
 
       {/* 6.Tree View */}
       <Tree listData={menusData} />
+
+      {/*7.QR Genretor  */}
+      <Qr />
     </div>
   );
 }

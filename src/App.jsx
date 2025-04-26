@@ -8,9 +8,10 @@ import Index from "./Components/load-more/Index";
 import Tree from "./Components/tree-view/Tree";
 import { menusData } from "./Components/tree-view/data";
 import Qr from "./Components/QR_Genrator/Qr";
+import LightDark from "./Components/light-dark-mode/LightDark";
 export default function App() {
   return (
-    <div>
+    <>
       {/* 1.Accordion component  */}
       <Accordion />
 
@@ -31,6 +32,9 @@ export default function App() {
 
       {/*7.QR Genretor  */}
       <Qr />
-    </div>
+
+      {/* 8. Dark and Light mode */}
+      <LightDark />
+    </>
   );
 }

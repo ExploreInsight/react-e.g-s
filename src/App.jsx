@@ -1,4 +1,3 @@
-import React from "react";
 import Star from "./Components/star-rating/Star";
 import "./App.css";
 import Accordion from "./Components/accordion/Accordion";
@@ -9,9 +8,10 @@ import Tree from "./Components/tree-view/Tree";
 import { menusData } from "./Components/tree-view/data";
 import Qr from "./Components/QR_Genrator/Qr";
 import LightDark from "./Components/light-dark-mode/LightDark";
+import Scroller from "./Components/QR_Genrator/Scroller";
 export default function App() {
   return (
-    <>
+    <div className="page">
       {/* 1.Accordion component  */}
       <Accordion />
 
@@ -34,7 +34,11 @@ export default function App() {
       <Qr />
 
       {/* 8. Dark and Light mode */}
-      <LightDark />
-    </>
+      {/* <LightDark /> */}
+      {/* TODO complete the light and dark mode component */}
+
+      {/* 9. Scroller */}
+      <Scroller url={'https://dummyjson.com/products?limit=100'}/>
+    </div>
   );
 }

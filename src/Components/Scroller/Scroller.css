@@ -1,0 +1,84 @@
+ .scroller {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.scroller_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ff7e00, #ffa500);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.scroller_ratio span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.scoller_content {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 1rem;
+    
+} 
+
+/* Customize scrollbar */
+ .scoller_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scoller_content::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: #ff7e00;
+}
+
+/* Cards */
+ .scoller_card {
+  
+  background-color: #fff8f0;
+  border: 1px solid #ffa500;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.scoller_card:hover {
+  transform: scale(1.01);
+}
+
+.scoller_card_content h3 {
+  color: #ff7e00;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.scoller_card_content p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+} 

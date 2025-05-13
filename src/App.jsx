@@ -8,7 +8,7 @@ import Tree from "./Components/tree-view/Tree";
 import { menusData } from "./Components/tree-view/data";
 import Qr from "./Components/QR_Genrator/Qr";
 import LightDark from "./Components/light-dark-mode/LightDark";
-import Scroller from "./Components/QR_Genrator/Scroller";
+import Scroller from "./Components/Scroller/Scroller";
 export default function App() {
   return (
     <div className="page">

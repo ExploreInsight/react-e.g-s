@@ -49,7 +49,7 @@ function Scroller({ url }) {
           color: "#000",
         }}
       >
-        <div className="heading"> Custom Scroller</div>
+        <h2 className="heading"> Custom Scroller</h2>
         <div className="scroller_ratio">
           <span>Scroller Ratio: {Math.floor(scrollerRatio)}%</span>
         </div>
